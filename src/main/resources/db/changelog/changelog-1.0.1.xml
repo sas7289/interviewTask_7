@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="init" author="Aleksandr Shakhoff">
+        <insert tableName="students">
+            <column name="id" valueComputed="uuid_generate_v4()"/>
+            <column name="age" value="20"/>
+            <column name="name" value="S1"/>
+        </insert>
+        <insert tableName="students">
+            <column name="id" valueComputed="uuid_generate_v4()"/>
+            <column name="age" value="19"/>
+            <column name="name" value="S2"/>
+        </insert>
+        <insert tableName="students">
+            <column name="id" valueComputed="uuid_generate_v4()"/>
+            <column name="age" value="21"/>
+            <column name="name" value="S3"/>
+        </insert>
+        <insert tableName="students">
+            <column name="id" valueComputed="uuid_generate_v4()"/>
+            <column name="age" value="18"/>
+            <column name="name" value="S4"/>
+        </insert>
+        <insert tableName="students">
+            <column name="id" valueComputed="uuid_generate_v4()"/>
+            <column name="age" value="20"/>
+            <column name="name" value="S5"/>
+        </insert>
+
+    </changeSet>
+
+
+</databaseChangeLog>
